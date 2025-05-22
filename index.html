@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card</title>
+  <style>
+    body {
+      background-color: #141414;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .card {
+      background-color: #1f1f1f;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      width: 300px;
+    }
+    .card img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .location {
+      color: #b3ff00;
+      margin: 5px 0 15px;
+    }
+    .bio {
+      font-size: 14px;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+    .links a {
+      display: block;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .links a:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="avatar-jessica.jpeg"Profile Picture" />
+    <div class="name">Jessica Randall</div>
+    <div class="location">London, United Kingdom</div>
+    <div class="bio">"Front-end developer and avid reader."</div>
+    <div class="links">
+      <a href="#">GitHub</a>
+      <a href="#">Frontend Mentor</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>
