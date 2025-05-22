@@ -3,73 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Profile Card</title>
+  <title>Feature Cards</title>
   <style>
     body {
-      background-color: #141414;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
     }
-    .card {
-      background-color: #1f1f1f;
-      padding: 30px;
-      border-radius: 12px;
+
+    .section {
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-      width: 300px;
+      padding: 60px 20px;
     }
-    .card img {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
+
+    .section h2 {
+      font-size: 24px;
+      color: #888;
+      margin-bottom: 10px;
     }
-    .name {
-      font-size: 20px;
+
+    .section h1 {
+      font-size: 32px;
+      color: #333;
       font-weight: bold;
-      color: #fff;
+      margin-bottom: 15px;
     }
-    .location {
-      color: #b3ff00;
-      margin: 5px 0 15px;
+
+    .section p {
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto 40px;
     }
-    .bio {
-      font-size: 14px;
-      color: #ddd;
-      margin-bottom: 20px;
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
     }
-    .links a {
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      width: 240px;
+      text-align: left;
+      position: relative;
+    }
+
+    .card::before {
+      content: "";
       display: block;
-      background-color: #333;
-      color: #fff;
-      text-decoration: none;
-      margin: 8px 0;
-      padding: 10px;
-      border-radius: 8px;
-      transition: background 0.3s;
+      height: 4px;
+      width: 100%;
+      border-radius: 4px 4px 0 0;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
-    .links a:hover {
-      background-color: #444;
+
+    .supervisor::before { background-color: #00d9d0; }
+    .team::before { background-color: #ff6b6b; }
+    .calculator::before { background-color: #00b3ff; }
+    .karma::before { background-color: #f0a500; }
+
+    .card h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .card img {
+      width: 40px;
+      height: 40px;
+      float: right;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="avatar-jessica.jpeg"Profile Picture" />
-    <div class="name">Jessica Randall</div>
-    <div class="location">London, United Kingdom</div>
-    <div class="bio">"Front-end developer and avid reader."</div>
-    <div class="links">
-      <a href="#">GitHub</a>
-      <a href="#">Frontend Mentor</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Twitter</a>
-      <a href="#">Instagram</a>
+
+  <div class="section">
+    <h2>Reliable, efficient delivery</h2>
+    <h1>Powered by Technology</h1>
+    <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+
+    <div class="cards">
+      <div class="card supervisor">
+        <h3>Supervisor</h3>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="file:///C:/Users/Yana/Downloads/four-card-feature-section-master/icon-supervisor.svg" alt="Supervisor"/>
+      </div>
+      <div class="card team">
+        <h3>Team Builder</h3>
+        <p>Scans our talent network to create the optimal team for your project</p>
+        <img src="file:///C:/Users/Yana/Downloads/four-card-feature-section-master/icon-team-builder.svg" alt="Team Builder"/>
+      </div>
+      <div class="card calculator">
+        <h3>Calculator</h3>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img src="file:///C:/Users/Yana/Downloads/four-card-feature-section-master/icon-calculator.svg" alt="Calculator"/>
+      </div>
+      <div class="card karma">
+        <h3>Karma</h3>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        <img src="file:///C:/Users/Yana/Downloads/four-card-feature-section-master/icon-karma.svg" alt="Karma"/>
+      </div>
     </div>
   </div>
+
 </body>
 </html>
